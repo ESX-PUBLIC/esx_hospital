@@ -29,14 +29,14 @@ Go to any hospital and see the doctor to get healed.
 
 **2) Manually**
 
-- Download https://github.com/ddh3/esx_hospital/archive/master.zip
+- Download https://github.com/ESX-PUBLIC/esx_hospital/archive/master.zip
 - Put it in resource/[esx] directory
 
 **3) Using git**
 
 ```
 cd resources/[esx]/
-git clone https://github.com/ddh3/esx_hospital esx_hospital
+git clone https://github.com/ESX-PUBLIC/esx_hospital esx_hospital
 ```
 
 ## Installation
