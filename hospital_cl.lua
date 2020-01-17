@@ -1,11 +1,6 @@
 ---------- VARIABLES ----------
-
-
 local treatment = false
-
-
 local timer = false
-
 
 local blips = {
     {name="Hospital", id=61, x = 338.85, y = -1394.56, z = 31.51, color = 1, heading=49.404, scale=0.7 },
@@ -18,15 +13,12 @@ local blips = {
     {name="Hospital", id=61, x = -246.98889160156, y = 6330.5834960938, z = 31.426147460938, color= 1, heading=221.37, scale=0.7},
 }
 
-
 ---------- FONCTIONS ----------
-
 function Notify(text)
     SetNotificationTextEntry('STRING')
     AddTextComponentString(text)
     DrawNotification(false, false)
 end
-
 
 function ShowInfo(text, state)
     SetTextComponentFormat("STRING")
@@ -34,7 +26,6 @@ function ShowInfo(text, state)
 end
 
 ---------- CITIZEN ----------
-
 Citizen.CreateThread(function()
     RequestModel(GetHashKey("s_m_m_doctor_01"))
     while not HasModelLoaded(GetHashKey("s_m_m_doctor_01")) do
@@ -58,7 +49,6 @@ Citizen.CreateThread(function()
         SetBlockingOfNonTemporaryEvents(item.blip, true)
     end
 end)
-
 
 Citizen.CreateThread(function()
     while true do
